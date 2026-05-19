@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // @ts-ignore
 import 'swiper/css';
 // @ts-ignore
-import 'swiper/css/effect-coverflow';
-// @ts-ignore
 import 'swiper/css/pagination';
 // @ts-ignore
 import 'swiper/css/navigation';
@@ -15,48 +13,34 @@ import "./projects.css";
 
 import { projectsData } from '@/data/projectsData';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
-function Projects() {
-  const swiperwrapperRef = useRef<HTMLElement | null>(null);
-  const adjustMargin = () => {
-    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
-    if (swiperwrapperRef.current) {
-      swiperwrapperRef.current.style.marginLeft = screenWidth <= 520 ? '0px' : screenWidth <= 650 ? "-50px" :
-        screenWidth <= 800 ? "-100px" : "-250px";
-    }
 
-  }
-  useEffect(() => {
-    adjustMargin();
-    window.addEventListener('resize', adjustMargin);
-    return () => {
-      window.removeEventListener('resize', adjustMargin);
-    }
-  }, [])
+function Projects() {
   return (
-    <div className="container " id='projects'>
+    <div className="container" id='projects'>
       <h1 className="main-heading">Latest Projects</h1>
 
-      <Swiper modules={[Pagination, Navigation, Autoplay]} grabCursor initialSlide={3}
-        centeredSlides
+      <Swiper 
+        modules={[Pagination, Navigation, Autoplay]} 
+        grabCursor 
+        initialSlide={3}
+        centeredSlides={true}
         slidesPerView="auto"
         speed={800}
-        slideToClickedSlide
+        slideToClickedSlide={true}
         pagination={{ clickable: true }}
         autoplay={{
           delay: 5000, 
           disableOnInteraction: false,
         }}
-
+        // بنسيب Swiper يتعامل مع المسافات بناءً على حجم الشاشة بشكل سليم
         breakpoints={{
-          320: { spaceBetween: 40 },
+          320: { spaceBetween: 20 },
           650: { spaceBetween: 30 },
-          1040: { spaceBetween: 20 }
+          1040: { spaceBetween: 40 }
         }}
-        onSwiper={(swiper) => swiperwrapperRef.current = swiper.wrapperEl}
       >
         {projectsData.map((project, index) => (
-          <SwiperSlide key={index} >
+          <SwiperSlide key={index}>
             <Image
               src={project.image}
               alt={project.title}
@@ -64,22 +48,21 @@ function Projects() {
               className="rounded-lg object-contain"
             />
             <div className='title'>
-              <h1>{project.title}</h1>
+              <h1 className='text-white'>{project.title}</h1>
             </div>
             <div className='content'>
               <div className='text-box'>
-                <p >{project.description}</p>
+                <p className='text-white'>{project.description}</p>
               </div>
               <div className="footer">
                 <div className='category'>
-                  {project?.categories.map((category, index) => (
+                  {project?.categories.map((category, idx) => (
                     <span
-                      key={index}
-                      style={{ "--i": index + 1 } as React.CSSProperties}
+                      key={idx}
+                      style={{ "--i": idx + 1 } as React.CSSProperties}
                     >
                       {category}
                     </span>
-
                   ))}
                 </div>
               </div>

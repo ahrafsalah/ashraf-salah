@@ -81,7 +81,15 @@ body {
     font-size: 30px;
     transition: .3s;
     z-index: 1;
+    color: white;
 
+}
+@media (max-width: 767px) { 
+    .main-heading {
+        font-size: 25px;
+        padding: 8px 16px;
+    }
+  
 }
 
 .main-heading:hover {

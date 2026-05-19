@@ -4,7 +4,7 @@ export default function HeroGraphic() {
   return (
     <div className="sm:p-8" id="skills"><h2 className="main-heading " >My Skills</h2>
     <div className="flex items-center justify-center  flex-col">
-      <p className=" text-lg text-center px-2">I'm currently looking to join a <span className="text-(--main-color)">cross-functional </span>team
+      <p className=" text-lg text-center px-2 text-white">I'm currently looking to join a <span className="text-(--main-color)">cross-functional </span>team
         <span className="block text-sm text-center " >that values improving people's lives through accessible design</span></p>
       <svg className="max-w-full px-2 w-[700px] h-[400px] sm:w-[895px] sm:h-[754px] sm:-mt-20 mt-0" viewBox="0 0 895 754" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <path d="M584 182.5C540.333 230 454.8 352 462 460" stroke="url(#paint0_linear_16_228)" />

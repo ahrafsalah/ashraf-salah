@@ -148,6 +148,7 @@ const Footer = () => {
               gap-4
             "
           >
+            <a href="https://www.instagram.com/ashraf_salah3?igsh=Y3hpeTF6bGo2anlx&utm_source=qr" target="_blank" rel="noopener noreferrer">
             <FaInstagram
               className="
                 text-gray-400
@@ -155,6 +156,8 @@ const Footer = () => {
                 hover:text-green-400
               "
             />
+            </a>
+             <a href="https://www.linkedin.com/in/ashraf-s-9b339a291?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn
               className="
                 text-gray-400
@@ -162,6 +165,8 @@ const Footer = () => {
                 hover:text-green-400
               "
             />
+            </a>
+             <a href="https://www.facebook.com/share/1D4SND5X8g/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
             <FaFacebookF
               className="
                 text-gray-400
@@ -169,6 +174,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             />
+            </a>
           </div>
         </div>
       </div>

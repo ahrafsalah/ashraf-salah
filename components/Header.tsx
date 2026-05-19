@@ -18,7 +18,7 @@ const Header = () => {
         <nav className="hidden  md:flex rounded-[35px] p-2 px-5 bg-[conic-gradient(from_181.06deg_at_50%_50%,rgba(100,154,99,0.35)_0deg,rgba(0,0,0,0)_172.66deg,rgba(107,219,106,0.31)_281.25deg,rgba(100,154,99,0.35)_360deg)]">
           <ul className="flex items-center gap-4 text-white">
             <li>
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="/#skills">Skills</Link>
@@ -75,7 +75,7 @@ const Header = () => {
                 />
               </div>
               <div className="flex flex-col items-center  gap-6 mt-10">
-                <Link href="#" onClick={toggleMenu} className="text-xl">
+                <Link href="/#" onClick={toggleMenu} className="text-xl">
                   Home
                 </Link>
                 <Link href="/#skills" onClick={toggleMenu} className="text-xl">
