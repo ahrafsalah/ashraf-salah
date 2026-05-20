@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className=" sticky top-0 z-50 bg-[#0a0a0a]   ">
       <div className="container mx-auto flex  items-center justify-between p-2  px-4">
-        <Image src="/assets/logoImg.png" alt="logo" width={50} height={50} />
+        <Image src="/images/logoImg.png" alt="logo" width={50} height = {50}  className="w-auto h-auto"/>
 
         {/* Desktop Menu */}
         <nav className="hidden  md:flex rounded-[35px] p-2 px-5 bg-[conic-gradient(from_181.06deg_at_50%_50%,rgba(100,154,99,0.35)_0deg,rgba(0,0,0,0)_172.66deg,rgba(107,219,106,0.31)_281.25deg,rgba(100,154,99,0.35)_360deg)]">
@@ -62,10 +62,11 @@ const Header = () => {
               <div className="flex items-center justify-between">
                 {" "}
                 <Image
-                  src="/assets/logoImg.png"
+                  src="/images/logoImg.png"
                   alt="logo"
                   width={50}
                   height={50}
+                  className="w-auto h-auto"
                 />
                 <MdOutlineClose
                   size={30}
@@ -75,7 +76,7 @@ const Header = () => {
                 />
               </div>
               <div className="flex flex-col items-center  gap-6 mt-10">
-                <Link href="/#" onClick={toggleMenu} className="text-xl">
+                <Link href="/" onClick={toggleMenu} className="text-xl">
                   Home
                 </Link>
                 <Link href="/#skills" onClick={toggleMenu} className="text-xl">

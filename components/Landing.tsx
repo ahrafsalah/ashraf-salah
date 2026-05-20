@@ -18,7 +18,7 @@ const Landing = () => {
         "
       >
         <div
-          style={{ backgroundImage: "url('/assets/Gradient.png')" }}
+          style={{ backgroundImage: "url('/images/Gradient.png')" }}
           className="
             w-[460px] h-[260px]
             bg-contain bg-no-repeat bg-center
@@ -27,25 +27,26 @@ const Landing = () => {
           "
         >
           <Image
-            src="/assets/image.png"
+            src="/images/image.png"
             alt="Ashraf"
             width={120}
             height={120}
             className="
-              absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+              absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
             "
           />
         </div>
 
         {/* Arrow */}
         <Image
-          src="/assets/arrow.png"
+          src="/images/arrow.png"
           alt="arrow"
           width={130}
           height={130}
           className="
             absolute -top-10 left-1/4
             md:left-34
+       
           "
         />
 

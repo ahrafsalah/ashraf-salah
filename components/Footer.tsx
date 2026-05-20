@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
@@ -36,10 +35,11 @@ const Footer = () => {
         {/* Logo */}
         <div>
           <Image
-            src="/assets/logoImg.png"
+            src="/images/logoImg.png"
             alt="logo"
             width={100}
             height={100}
+            className="w-auto h-auto"
           />
         </div>
 
@@ -91,7 +91,6 @@ const Footer = () => {
             >
               <Link href="#services">Services</Link>
             </li>
-           
           </ul>
         </div>
 
@@ -117,7 +116,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-             <Link href="/">About Me</Link>
+              <Link href="/">About Me</Link>
             </li>
             <li
               className="
@@ -127,17 +126,17 @@ const Footer = () => {
             >
               <Link href="/contact-us">Contact Me</Link>
             </li>
-           
           </ul>
         </div>
 
         {/* Newsletter */}
-     <div>
+        <div>
           <h4
             className="
               mb-4  
               font-semibold
-            "          >
+            "
+          >
             Follow Me
           </h4>
 
@@ -148,32 +147,44 @@ const Footer = () => {
               gap-4
             "
           >
-            <a href="https://www.instagram.com/ashraf_salah3?igsh=Y3hpeTF6bGo2anlx&utm_source=qr" target="_blank" rel="noopener noreferrer">
-            <FaInstagram
-              className="
+            <a
+              href="https://www.instagram.com/ashraf_salah3?igsh=Y3hpeTF6bGo2anlx&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                className="
                 text-gray-400
                 cursor-pointer
                 hover:text-green-400
               "
-            />
+              />
             </a>
-             <a href="https://www.linkedin.com/in/ashraf-s-9b339a291?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn
-              className="
+            <a
+              href="https://www.linkedin.com/in/ashraf-s-9b339a291?utm_source=share_via&utm_content=profile&utm_medium=member_iosc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn
+                className="
                 text-gray-400
                 cursor-pointer
                 hover:text-green-400
               "
-            />
+              />
             </a>
-             <a href="https://www.facebook.com/share/1D4SND5X8g/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF
-              className="
+            <a
+              href="https://www.facebook.com/share/1D4SND5X8g/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF
+                className="
                 text-gray-400
                 cursor-pointer
                 hover:text-green-400
               "
-            />
+              />
             </a>
           </div>
         </div>
