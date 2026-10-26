@@ -4,8 +4,10 @@ import { useRef } from "react";
 import toast from "react-hot-toast";
 import { MdEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "next-intl";
 export default function ContactSection() {
   const form = useRef<HTMLFormElement>(null);
+  const t = useTranslations("Contact");
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -30,10 +32,11 @@ export default function ContactSection() {
         backgroundImage: "url('/assets/bg-img.png')",
       }}
       className="
-        min-h-screen w-full
+        min-h-screen max-w-full md:max-w-[80%]
         py-16
         bg-cover bg-center
         relative
+        m-auto
       "
     >
       {/* Overlay */}
@@ -65,7 +68,7 @@ export default function ContactSection() {
               text-white text-5xl font-bold
             "
           >
-            Contact Me
+            {t("title")}
           </h2>
 
           <p
@@ -75,11 +78,7 @@ export default function ContactSection() {
               text-white
             "
           >
-            I’m a passionate Frontend Developer focused on building modern,
-            responsive, and user-friendly web applications. Whether you have a
-            project idea, freelance opportunity, or just want to connect, feel
-            free to reach out. I’m always excited to collaborate and create
-            exceptional digital experiences.
+            {t("description")}
           </p>
         </div>
 
@@ -125,7 +124,7 @@ export default function ContactSection() {
                     text-(--main-color) text-2xl font-semibold
                   "
                 >
-                  Address
+                  {t("ContactInfo.address.title")}
                 </h4>
 
                 <p
@@ -133,7 +132,7 @@ export default function ContactSection() {
                     text-white
                   "
                 >
-                  Tanta - Gharbia - Egypt
+                  {t("ContactInfo.address.value")}
                 </p>
               </div>
             </div>
@@ -164,7 +163,7 @@ export default function ContactSection() {
                     text-(--main-color) text-2xl font-semibold
                   "
                 >
-                  Phone
+                  {t("ContactInfo.phone.title")}
                 </h4>
 
                 <p
@@ -172,7 +171,7 @@ export default function ContactSection() {
                     text-white
                   "
                 >
-                  +201029805532
+                  {t("ContactInfo.phone.value")}
                 </p>
               </div>
             </div>
@@ -203,7 +202,7 @@ export default function ContactSection() {
                     text-(--main-color) text-2xl font-semibold
                   "
                 >
-                  Email
+                  {t("ContactInfo.email.title")}
                 </h4>
 
                 <p
@@ -211,7 +210,7 @@ export default function ContactSection() {
                     text-white
                   "
                 >
-                  a.salah3451@gmail.com
+                  {t("ContactInfo.email.value")}
                 </p>
               </div>
             </div>
@@ -239,7 +238,7 @@ export default function ContactSection() {
                   text-4xl font-bold text-white
                 "
               >
-                Send Message
+                {t("form.title")}
               </h2>
 
               {/* Name */}
@@ -258,11 +257,8 @@ export default function ContactSection() {
                     border-b-2 border-white
                     peer outline-none
                   "
-                  placeholder="Full Name"
-                  
+                  placeholder={t("form.name")}
                 />
-
-            
               </div>
 
               {/* Email */}
@@ -281,9 +277,8 @@ export default function ContactSection() {
                     border-b-2 border-white
                     peer outline-none
                   "
-                  placeholder="Email"
+                  placeholder={t("form.email")}
                 />
-
               </div>
 
               {/* Message */}
@@ -303,10 +298,8 @@ export default function ContactSection() {
                     resize-none
                     peer outline-none
                   "
-                  placeholder="Type your Message..."
+                  placeholder={t("form.message")}
                 ></textarea>
-
-         
               </div>
 
               {/* Submit */}
@@ -324,7 +317,7 @@ export default function ContactSection() {
                   rounded-xl
                 "
               >
-                Send
+                {t("form.submit")}
               </button>
             </form>
           </div>

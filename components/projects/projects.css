@@ -1,7 +1,8 @@
 .swiper {
   width: 100%;
   padding-bottom: 60px;
-  overflow: visible !important; /* مهم جداً عشان السلايدز اللي ع الجناب تظهر ومتتأكلش */
+  overflow: visible !important;
+  max-width: 100%;
 }
 .swiper-slide {
   position: relative;

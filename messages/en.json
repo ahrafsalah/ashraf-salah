@@ -1,0 +1,69 @@
+{
+  "Services": {
+    "title": "My Services"
+  },
+  "Projects": {
+    "title": "My Projects"
+  },
+  "Header": {
+    "home": "Home",
+    "skills": "Skills",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact Me",
+    "resume": "Resume"
+  },
+
+  "Landing": {
+    "greeting": "Hello, I'm Ashraf Salah",
+    "roleDesigner": "A Designer who",
+    "quotePart1": "Judges a book",
+    "quotePart2": "by its",
+    "quotePart3": "cover...",
+    "quoteReason": "Because if the cover does not impress you what else can?",
+    "developerTitle": "I'm a Frontend Developer",
+    "developerDescription": "I enjoys building clean, responsive, and user-friendly web interfaces. I work mainly with React.js, Next.js, and Tailwind CSS, and I always focus on writing clean code and creating smooth user experiences. I have solid experience working with APIs, state management (Redux / Context), and integrating projects with services like Firebase and Supabase. I’m constantly learning, improving my skills, and building real projects that solve problems and deliver value."
+  },
+  "Skills": {
+    "title": "My Skills",
+    "quotePart1": "I'm currently looking to join a",
+    "quotePart2": "cross-functional",
+    "quotePart3": "team",
+    "quotePart4": "that values improving people's lives through accessible design"
+  },
+
+  "Footer": {
+    "QuickLinks": {
+      "Title": "Quick Links",
+      "Home": "Home",
+      "Skills": "Skills",
+      "Services": "Services",
+      "Projects": "Projects"
+    },
+    "Company": {
+      "Title": "Company",
+      "About": "About",
+      "ContactMe": "Contact  Me",
+      "Resume": "Resume"
+    },
+    "FollowMe": {
+      "title": "Follow Me"
+    }
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "description": "I'm available for new projects or job opportunities. Feel free to reach out to me via email or through the contact form below.",
+    "form": {
+      "title": "Send Message",
+      "name": "Full Name",
+      "email": "Email",
+      "message": "Type Your Message",
+      "submit": "Submit"
+    },
+    "ContactInfo": {
+      "address": { "title": "Address", "value": "Tanta - Gharbia - Egypt" },
+      "phone": { "title": "Phone", "value": "01029805532" },
+      "email": { "title": "Email", "value": "a.salah3451@gmail.com" }
+    }
+  }
+}

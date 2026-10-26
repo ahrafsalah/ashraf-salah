@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <footer
       className="
@@ -51,7 +53,7 @@ const Footer = () => {
               font-semibold
             "
           >
-            Quick Links
+            {t("QuickLinks.Title")}
           </h4>
           <ul
             className="
@@ -65,7 +67,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#">Home</Link>
+              <Link href="#">{t("QuickLinks.Home")}</Link>
             </li>
             <li
               className="
@@ -73,7 +75,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#skills">Skills</Link>
+              <Link href="#skills">{t("QuickLinks.Skills")}</Link>
             </li>
             <li
               className="
@@ -81,7 +83,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#projects">Projects</Link>
+              <Link href="#projects">{t("QuickLinks.Projects")}</Link>
             </li>
             <li
               className="
@@ -89,7 +91,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#services">Services</Link>
+              <Link href="#services">{t("QuickLinks.Services")}</Link>
             </li>
           </ul>
         </div>
@@ -102,7 +104,7 @@ const Footer = () => {
               font-semibold
             "
           >
-            Company
+            {t("Company.Title")}
           </h4>
           <ul
             className="
@@ -116,7 +118,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="/">About Me</Link>
+              <Link href="/">{t("Company.About")}</Link>
             </li>
             <li
               className="
@@ -124,7 +126,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="/contact-us">Contact Me</Link>
+              <Link href="/contact-us">{t("Company.ContactMe")}</Link>
             </li>
           </ul>
         </div>
@@ -137,7 +139,7 @@ const Footer = () => {
               font-semibold
             "
           >
-            Follow Me
+            {t("Company.Title")}
           </h4>
 
           <div

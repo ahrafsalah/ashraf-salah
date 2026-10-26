@@ -1,11 +1,13 @@
+import { useTranslations } from "next-intl";
 
 
 export default function HeroGraphic() {
+  const t = useTranslations('Skills');
   return (
-    <div className="sm:p-8" id="skills"><h2 className="main-heading " >My Skills</h2>
+    <div className="sm:p-8" id="skills"><h2 className="main-heading " >{t('title')}</h2>
       <div className="flex items-center justify-center  flex-col">
-        <p className=" text-lg text-center px-2 text-white">I'm currently looking to join a <span className="text-(--main-color)">cross-functional </span>team
-          <span className="block text-sm text-center " >that values improving people's lives through accessible design</span></p>
+        <p className=" text-lg text-center px-2 text-white">{t('quotePart1')} <span className="text-(--main-color)">{t('quotePart2')} </span>{t('quotePart3')}
+          <span className="block text-sm text-center " >{t('quotePart4')}</span></p>
         <svg className="max-w-full px-2 w-[700px] h-[400px] sm:w-[895px] sm:h-[754px] sm:-mt-20 mt-0" viewBox="0 0 895 754" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <path d="M584 182.5C540.333 230 454.8 352 462 460" stroke="url(#paint0_linear_16_228)" />
           <path d="M522.5 199.5C478.833 247 445.8 361.5 453 469.5" stroke="url(#paint1_linear_16_228)" />

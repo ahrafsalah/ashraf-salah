@@ -1,6 +1,10 @@
+"use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Landing = () => {
+  const t = useTranslations("Landing");
+
   return (
     <div
       className="
@@ -32,21 +36,19 @@ const Landing = () => {
             width={120}
             height={120}
             className="
-              absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+              absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             "
           />
         </div>
 
-        {/* Arrow */}
         <Image
           src="/images/arrow.png"
           alt="arrow"
           width={130}
           height={130}
           className="
-            absolute -top-10 left-1/4
+            absolute -top-10 left-1/4 rtl:right-1/4 rtl:md:right-34 rtl:left-auto rtl:md:left-auto rtl:-scale-x-100
             md:left-34
-       
           "
         />
 
@@ -60,12 +62,14 @@ const Landing = () => {
           <h1
             className="
               min-[450px]:text-lg min-[540px]:relative
-              text-xs font-preahvihear
-              absolute -top-3 right-3
+              text-xs
+              rtl:text-lg 
+              absolute -top-4 right-3
+              rtl:left-0 rtl:right-auto
               sm:text-lg
             "
           >
-            Hello, I&apos;m Ashraf Salah
+            {t("greeting")}
           </h1>
           <div
             className="
@@ -83,7 +87,7 @@ const Landing = () => {
                 md:text-sm
               "
             >
-              A Designer who
+              {t("roleDesigner")}
             </p>
             <p
               className="
@@ -93,35 +97,37 @@ const Landing = () => {
                 md:text-5xl
               "
             >
-              Judges a book{" "}
+              {t("quotePart1")}{" "}
               <span
                 className="
                   block
                 "
               >
-                by its{" "}
+                {t("quotePart2")}{" "}
                 <span
                   className="
                     text-(--main-color)
                   "
                 >
-                  cover...
+                  {t("quotePart3")}
                 </span>
               </span>
             </p>
 
             <p
               className="
-                text-xs
+                text-xs text-gray-400
+                italic
                 sm:text-sm
                 md:text-base
               "
             >
-              Because if the cover does not impress you what else can?
+              {t("quoteReason")}
             </p>
           </div>
         </div>
       </div>
+
       <div
         className="
           p-6 mt-6
@@ -130,23 +136,19 @@ const Landing = () => {
         <h2
           className="
             mb-7
-            text-4xl
+            text-4xl font-bold text-transparent
+            bg-gradient-to-r from-white to-gray-400 bg-clip-text
           "
         >
-          I&apos;m a Frontend Developer
+          {t("developerTitle")}
         </h2>
         <p
           className="
-            font-thin text-[15px] leading-6
+            max-w-4xl
+            font-thin text-[15px] leading-7 text-gray-300
           "
         >
-          I enjoys building clean, responsive, and user-friendly web interfaces.
-          I work mainly with React.js, Next.js, and Tailwind CSS, and I always
-          focus on writing clean code and creating smooth user experiences. I
-          have solid experience working with APIs, state management (Redux /
-          Context), and integrating projects with services like Firebase and
-          Supabase. I’m constantly learning, improving my skills, and building
-          real projects that solve problems and deliver value.{" "}
+          {t("developerDescription")}
         </p>
       </div>
     </div>
