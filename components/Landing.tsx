@@ -130,14 +130,14 @@ const Landing = () => {
 
       <div
         className="
-          p-6 mt-6
+          p-2 md:p-6 mt-6 
         "
       >
         <h2
           className="
             mb-7
-            text-4xl font-bold text-transparent
-            bg-gradient-to-r from-white to-gray-400 bg-clip-text
+            text-2xl md:text-4xl font-bold text-transparent 
+            bg-gradient-to-r from-white to-gray-400 bg-clip-text text-center
           "
         >
           {t("developerTitle")}

@@ -55,16 +55,16 @@ const Header = () => {
             "
           >
             <li>
-              <Link href="/"> {t("home")} </Link>
+              <Link href="#"> {t("home")} </Link>
             </li>
             <li>
-              <Link href="/#skills"> {t("skills")} </Link>
+              <Link href="#skills"> {t("skills")} </Link>
             </li>
             <li>
-              <Link href="/#services"> {t("services")} </Link>
+              <Link href="#services"> {t("services")} </Link>
             </li>
             <li>
-              <Link href="/#projects"> {t("projects")} </Link>
+              <Link href="#projects"> {t("projects")} </Link>
             </li>
             <li>
               <Link href="/contact-us"> {t("contact")} </Link>
@@ -161,7 +161,7 @@ const Header = () => {
                   "
                 >
                   <Link
-                    href="/"
+                    href="#"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -170,7 +170,7 @@ const Header = () => {
                     {t("home")}
                   </Link>
                   <Link
-                    href="/#skills"
+                    href="#skills"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -179,7 +179,7 @@ const Header = () => {
                     {t("skills")}
                   </Link>
                   <Link
-                    href="/#services"
+                    href="#services"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -188,7 +188,7 @@ const Header = () => {
                     {t("services")}
                   </Link>
                   <Link
-                    href="/#projects"
+                    href="#projects"
                     onClick={toggleMenu}
                     className="
                       text-xl

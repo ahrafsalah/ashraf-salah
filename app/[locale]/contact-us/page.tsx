@@ -88,8 +88,120 @@ export default function ContactSection() {
             flex flex-col
             items-center justify-between gap-10
             lg:flex-row
+            m-auto
           "
         >
+                    {/* Form */}
+          <div
+            className="
+              w-full
+              p-10
+              bg-[#173119]
+              rounded-lg
+              lg:w-[45%]
+            "
+          >
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="
+                space-y-6
+              "
+            >
+              <h2
+                className="
+                  text-4xl font-bold text-white
+                "
+              >
+                {t("form.title")}
+              </h2>
+
+              {/* Name */}
+              <div
+                className="
+                  relative
+                "
+              >
+                <input
+                  type="text"
+                  required
+                  className="
+                    w-full
+                    py-2
+                    text-white
+                    placeholder-white
+                    bg-transparent
+                    border-b-2 border-white
+                    peer outline-none
+                  "
+                  placeholder={t("form.name")}
+                />
+              </div>
+
+              {/* Email */}
+              <div
+                className="
+                  relative
+                "
+              >
+                <input
+                  type="email"
+                  required
+                  className="
+                    w-full
+                    text-white
+                    placeholder-white
+                    py-2
+                    bg-transparent
+                    border-b-2 border-white
+                    peer outline-none
+                  "
+                  placeholder={t("form.email")}
+                />
+              </div>
+
+              {/* Message */}
+              <div
+                className="
+                  relative
+                "
+              >
+                <textarea
+                  required
+                  rows={4}
+                  className="
+                    w-full
+                    text-white
+                    placeholder-white
+                    py-2
+                    bg-transparent
+                    border-b-2 border-white
+                    resize-none
+                    peer outline-none
+                  "
+                  placeholder={t("form.message")}
+                ></textarea>
+              </div>
+
+              {/* Submit */}
+              <button
+                type="submit"
+                className="
+                  w-full
+                  py-3
+                  text-white text-lg
+                  bg-(--color3)
+                  border border-(--main-color)
+                  transition-all
+                  duration-300 
+                  cursor-pointer
+                  rounded-xl
+                "
+              >
+                {t("form.submit")}
+              </button>
+            </form>
+          </div>
           {/* Contact Info */}
           <div
             className="
@@ -216,111 +328,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Form */}
-          <div
-            className="
-              w-full
-              p-10
-              bg-(--color3)
-              rounded-lg
-              lg:w-[45%]
-            "
-          >
-            <form
-              ref={form}
-              onSubmit={sendEmail}
-              className="
-                space-y-6
-              "
-            >
-              <h2
-                className="
-                  text-4xl font-bold text-white
-                "
-              >
-                {t("form.title")}
-              </h2>
 
-              {/* Name */}
-              <div
-                className="
-                  relative
-                "
-              >
-                <input
-                  type="text"
-                  required
-                  className="
-                    w-full
-                    py-2
-                    bg-transparent
-                    border-b-2 border-white
-                    peer outline-none
-                  "
-                  placeholder={t("form.name")}
-                />
-              </div>
-
-              {/* Email */}
-              <div
-                className="
-                  relative
-                "
-              >
-                <input
-                  type="email"
-                  required
-                  className="
-                    w-full
-                    py-2
-                    bg-transparent
-                    border-b-2 border-white
-                    peer outline-none
-                  "
-                  placeholder={t("form.email")}
-                />
-              </div>
-
-              {/* Message */}
-              <div
-                className="
-                  relative
-                "
-              >
-                <textarea
-                  required
-                  rows={4}
-                  className="
-                    w-full
-                    py-2
-                    bg-transparent
-                    border-b-2 border-white
-                    resize-none
-                    peer outline-none
-                  "
-                  placeholder={t("form.message")}
-                ></textarea>
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="
-                  w-full
-                  py-3
-                  text-white text-lg
-                  bg-(--main-color)
-                  border border-(--main-color)
-                  transition-all
-                  duration-300 
-                  cursor-pointer
-                  rounded-xl
-                "
-              >
-                {t("form.submit")}
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
