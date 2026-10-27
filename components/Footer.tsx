@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("Footer");
+  
   return (
     <footer
       className="
@@ -139,7 +140,7 @@ const Footer = () => {
               font-semibold
             "
           >
-            {t("Company.Title")}
+            {t("socialMedia.title")}
           </h4>
 
           <div

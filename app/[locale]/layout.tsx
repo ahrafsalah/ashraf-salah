@@ -9,8 +9,6 @@ import { Toaster } from "react-hot-toast";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
-
 const preah = Preahvihear({
   weight: "400",
   subsets: ["latin"],
@@ -90,7 +88,7 @@ export default async function RootLayout(props: {
         className={`${geistSans.variable} ${geistMono.variable} ${activeFontClass} antialiased relative`}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <LanguageSwitcher />
+       
           <Header />
           <Toaster position="top-right" reverseOrder={false} />
           {props.children}
