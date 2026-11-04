@@ -41,6 +41,7 @@ export default function LanguageSwitcher() {
         cursor-pointer
         items-center gap-2
         transition hover:brightness-125 disabled:opacity-60
+        font-cairo
       "
     >
       <HiOutlineGlobeAlt size={18} aria-hidden="true" />
