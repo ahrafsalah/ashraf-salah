@@ -1,68 +1,57 @@
 export const servicesData = [
   {
-    image: "/images/service1.png",
+    image: "/images/service1.webp",
     title: {
-      en: "Build Websites",
-      ar: "بناء وتطوير المواقع الإلكترونية"
+      en: "Website Development",
+      ar: "تطوير المواقع الإلكترونية",
     },
     desc: {
-      en: "From the first idea to the final launch, I build complete websites from scratch. Clean design, fast performance, and a flawless look on every device. The goal is a site that represents your brand well and connects you with your audience.",
-      ar: "أبني مواقع إلكترونية متكاملة من الصفر، من بلورة الفكرة حتى الإطلاق. تصميم نظيف، وأداء سريع، ومظهر متقن على جميع الشاشات. هدفي موقع يمثّل علامتك التجارية جيداً ويقرّبك من جمهورك."
-    }
+      en: "Complete websites built from scratch, from the first idea to launch. Clean design, fast loading, and a consistent look on every screen, so your site represents your brand well and connects you with your audience.",
+      ar: "مواقع إلكترونية متكاملة تُبنى من الصفر، من الفكرة حتى الإطلاق. تصميم نظيف وتحميل سريع ومظهر متسق على جميع الشاشات، ليمثّل موقعك علامتك التجارية جيداً ويقرّبك من جمهورك.",
+    },
   },
   {
-    image: "/images/service2.png",
+    image: "/images/service2.webp",
     title: {
       en: "Web Applications",
-      ar: "تطوير تطبيقات الويب المخصصة"
+      ar: "تطبيقات الويب المخصصة",
     },
     desc: {
-      en: "Custom web applications built around what your project actually needs. A dashboard, a booking system, or a management platform: I turn your idea into a smooth, secure, and reliable system that people enjoy using.",
-      ar: "تطبيقات ويب مخصصة تُبنى حول احتياج مشروعك الفعلي. لوحة تحكم، أو نظام حجز، أو منصة إدارية: أحوّل فكرتك إلى نظام سلس وآمن وموثوق يسهل على المستخدمين التعامل معه."
-    }
+      en: "Custom web applications built around what your project actually needs, such as dashboards, booking systems, or management platforms, with a smooth interface and reliable data handling.",
+      ar: "تطبيقات ويب مخصصة تُبنى حول احتياج مشروعك الفعلي، مثل لوحات التحكم وأنظمة الحجز والمنصات الإدارية، بواجهة سلسة وتعامل موثوق مع البيانات.",
+    },
   },
   {
-    image: "/images/service3.png",
+    image: "/images/service3.webp",
     title: {
       en: "Single Page Applications",
-      ar: "تطبيقات الصفحة الواحدة (SPA)"
+      ar: "تطبيقات الصفحة الواحدة (SPA)",
     },
     desc: {
-      en: "Modern single page applications that feel instant. No full page reloads, everything updates in real time, and the whole experience feels more interactive, polished, and easy to navigate.",
-      ar: "تطبيقات صفحة واحدة حديثة تمنح المستخدم تجربة فورية. لا إعادة تحميل للصفحات، وكل شيء يتحدّث مباشرة، فيصبح التصفح أكثر تفاعلاً واحترافية وسهولة."
-    }
+      en: "Fast, interactive single page applications built with React and Next.js. Pages update instantly without full reloads, which makes the experience feel smoother and more polished.",
+      ar: "تطبيقات صفحة واحدة سريعة وتفاعلية مبنية بـ React وNext.js. تتحدّث الصفحات فوراً دون إعادة تحميل كاملة، فتبدو التجربة أكثر سلاسة واحترافية.",
+    },
   },
   {
-    image: "/images/service4.png",
+    image: "/images/service4.webp",
     title: {
-      en: "SEO",
-      ar: "تهيئة الموقع لمحركات البحث (SEO)"
+      en: "SEO Optimization",
+      ar: "تحسين محركات البحث (SEO)",
     },
     desc: {
-      en: "Help the right people find you. I apply solid SEO practices to your site structure, speed, and content organization so search engines understand your website, and more visitors find you naturally over time.",
-      ar: "أساعد الأشخاص المناسبين على الوصول إليك. أطبّق أسس الـ SEO على بنية الموقع وسرعته وتنظيم محتواه، لتفهمه محركات البحث جيداً، ويزداد عدد زوّاره بصورة طبيعية ومستمرة."
-    }
+      en: "Technical SEO built into the site: clean structure, proper metadata, fast loading, and well-organized content, so search engines understand your website and the right visitors can find you.",
+      ar: "تحسين تقني لمحركات البحث مدمج في الموقع: بنية نظيفة وبيانات وصفية صحيحة وتحميل سريع ومحتوى منظّم، لتفهم محركات البحث موقعك ويصل إليك الزوار المناسبون.",
+    },
   },
   {
-    image: "/images/s5.png",
+    image: "/images/s6.webp",
     title: {
-      en: "Static Websites",
-      ar: "المواقع التعريفية والثابتة"
+      en: "Design to Code",
+      ar: "تحويل التصاميم إلى كود",
     },
     desc: {
-      en: "Simple, fast, and secure. Static websites are a perfect fit for portfolios and business pages: they load instantly and need no complex systems behind them. I focus on a clear layout and a professional look that presents your content at its best.",
-      ar: "بسيطة وسريعة وآمنة. المواقع الثابتة خيار مثالي لمعارض الأعمال وصفحات الشركات التعريفية، فهي تُحمَّل فوراً ولا تحتاج إلى أنظمة معقدة خلفها. أهتم بوضوح التخطيط وبمظهر احترافي يعرض محتواك بأفضل صورة."
-    }
+      en: "Your Figma or PSD design, faithfully built in the browser. I turn design files into clean, responsive HTML, CSS, or React components that match the original and are easy to edit.",
+      ar: "تصميمك من Figma أو PSD كما هو تماماً في المتصفح. أحوّل ملفات التصميم إلى HTML وCSS أو مكوّنات React نظيفة ومتجاوبة تطابق الأصل وسهلة التعديل.",
+    },
   },
-  {
-    image: "/images/s6.png",
-    title: {
-      en: "PSD To HTML",
-      ar: "تحويل التصاميم إلى أكواد متجاوبة"
-    },
-    desc: {
-      en: "Your design, pixel-faithful in the browser. I convert PSD and other design files into clean, responsive HTML/CSS, paying attention to every small detail so the result matches the original. The code is organized, easy to edit, and works across screen sizes.",
-      ar: "تصميمك كما هو تماماً على المتصفح. أحوّل ملفات التصميم مثل PSD وFigma إلى HTML/CSS نظيف ومتجاوب، وأدقق في كل تفصيلة صغيرة ليطابق الناتج التصميم الأصلي. الكود منظّم وسهل التعديل ويعمل على مختلف الشاشات."
-    }
-  }
 ];

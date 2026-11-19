@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import React from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
@@ -29,9 +29,9 @@ const Header = () => {
       >
         <Image
           src="/images/logoImg.png"
-          alt="logo"
-          width={50}
-          height={50}
+          alt="Ashraf Salah logo"
+          width={40}
+          height={40}
           className="
             w-auto h-auto
           "
@@ -55,19 +55,33 @@ const Header = () => {
             "
           >
             <li>
-              <Link href="#"> {t("home")} </Link>
+              <Link href="/"> {t("home")} </Link>
             </li>
             <li>
-              <Link href="#skills"> {t("skills")} </Link>
+              <Link href="/#about"> {t("about")} </Link>
             </li>
             <li>
-              <Link href="#services"> {t("services")} </Link>
+              <Link href="/#skills"> {t("skills")} </Link>
             </li>
             <li>
-              <Link href="#projects"> {t("projects")} </Link>
+              <Link href="/#experience"> {t("experience")} </Link>
             </li>
             <li>
-              <Link href="/contact-us"> {t("contact")} </Link>
+              <Link href="/#services"> {t("services")} </Link>
+            </li>
+            <li>
+              <Link href="/#projects"> {t("projects")} </Link>
+            </li>
+            <li>
+              <Link href="/#testimonials"> {t("testimonials")} </Link>
+            </li>
+
+            <li>
+              <Link href="/#faq"> {t("faq")} </Link>
+            </li>
+
+            <li>
+              <Link href="/#contact"> {t("contact")} </Link>
             </li>
           </ul>
         </nav>
@@ -108,6 +122,8 @@ const Header = () => {
           >
             <HiOutlineMenuAlt3
               size={28}
+              role="button"
+              aria-label={t("openMenu")}
               onClick={toggleMenu}
               color="white"
               className="
@@ -136,7 +152,7 @@ const Header = () => {
                 >
                   <Image
                     src="/images/logoImg.png"
-                    alt="logo"
+                    alt="Ashraf Salah logo"
                     width={50}
                     height={50}
                     className="
@@ -145,6 +161,8 @@ const Header = () => {
                   />
                   <MdOutlineClose
                     size={30}
+                    role="button"
+                    aria-label={t("closeMenu")}
                     color="white"
                     onClick={toggleMenu}
                     className="
@@ -161,7 +179,7 @@ const Header = () => {
                   "
                 >
                   <Link
-                    href="#"
+                    href="/"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -170,7 +188,16 @@ const Header = () => {
                     {t("home")}
                   </Link>
                   <Link
-                    href="#skills"
+                    href="/#about"
+                    onClick={toggleMenu}
+                    className="
+                      text-xl
+                    "
+                  >
+                    {t("about")}
+                  </Link>
+                  <Link
+                    href="/#skills"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -179,7 +206,16 @@ const Header = () => {
                     {t("skills")}
                   </Link>
                   <Link
-                    href="#services"
+                    href="/#experience"
+                    onClick={toggleMenu}
+                    className="
+                      text-xl
+                    "
+                  >
+                    {t("experience")}
+                  </Link>
+                  <Link
+                    href="/#services"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -188,7 +224,7 @@ const Header = () => {
                     {t("services")}
                   </Link>
                   <Link
-                    href="#projects"
+                    href="/#projects"
                     onClick={toggleMenu}
                     className="
                       text-xl
@@ -196,6 +232,25 @@ const Header = () => {
                   >
                     {t("projects")}
                   </Link>
+                  <Link
+                    href="/#testimonials"
+                    onClick={toggleMenu}
+                    className="
+                      text-xl
+                    "
+                  >
+                    {t("testimonials")}
+                  </Link>
+                  <Link
+                    href="/#faq"
+                    onClick={toggleMenu}
+                    className="
+                      text-xl
+                    "
+                  >
+                    {t("faq")}
+                  </Link>
+
                   <Link
                     href="/contact-us"
                     onClick={toggleMenu}

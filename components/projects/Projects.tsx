@@ -12,7 +12,7 @@ import "./projects.css";
 
 import { projectsData } from "@/data/projectsData";
 import Image from "next/image";
-import { useLocale, useTranslations } from "use-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 function Projects() {
   const t = useTranslations("Projects");
@@ -24,7 +24,7 @@ function Projects() {
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         grabCursor
-        initialSlide={3}
+        initialSlide={0}
         centeredSlides={true}
         slidesPerView="auto"
         speed={800}
@@ -54,6 +54,30 @@ function Projects() {
             <div className="content">
               <div className="text-box">
                 <p className="text-white">{project.description[locale]}</p>
+                {(project.live || project.github) && (
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-full border border-(--main-color) bg-(--color3) px-4 py-1 text-sm text-white hover:brightness-125"
+                      >
+                        {t("live")}
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-full border border-zinc-600 px-4 py-1 text-sm text-white hover:border-(--main-color)"
+                      >
+                        {t("code")}
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
               <div className="footer">
                 <div className="category">

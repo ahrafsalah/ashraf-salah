@@ -1,6 +1,6 @@
 "use client";
 import { HomeIcon, PhoneCallIcon } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { MdEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
@@ -8,10 +8,12 @@ import { useTranslations } from "next-intl";
 export default function ContactSection() {
   const form = useRef<HTMLFormElement>(null);
   const t = useTranslations("Contact");
+  const [sending, setSending] = useState(false);
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!form.current) return;
+    if (!form.current || sending) return;
+    setSending(true);
 
     try {
       await emailjs.sendForm(
@@ -20,16 +22,18 @@ export default function ContactSection() {
         form.current,
         "BWzRSqxPGilPqFQr8",
       );
-      toast.success("Message sent successfully!");
+      toast.success(t("toast.success"));
       form.current.reset();
     } catch (error) {
-      toast.error("Failed to send message. Please try again later.");
+      toast.error(t("toast.error"));
+    } finally {
+      setSending(false);
     }
   };
   return (
     <section
       style={{
-        backgroundImage: "url('/assets/bg-img.png')",
+        backgroundImage: "url('/images/bg-img.png')",
       }}
       className="
         min-h-screen max-w-full md:max-w-[80%]
@@ -124,6 +128,8 @@ export default function ContactSection() {
               >
                 <input
                   type="text"
+                  name="user_name"
+                  autoComplete="name"
                   required
                   className="
                     w-full
@@ -146,6 +152,8 @@ export default function ContactSection() {
               >
                 <input
                   type="email"
+                  name="user_email"
+                  autoComplete="email"
                   required
                   className="
                     w-full
@@ -167,6 +175,7 @@ export default function ContactSection() {
                 "
               >
                 <textarea
+                  name="message"
                   required
                   rows={4}
                   className="
@@ -186,7 +195,9 @@ export default function ContactSection() {
               {/* Submit */}
               <button
                 type="submit"
+                disabled={sending}
                 className="
+                  disabled:opacity-60 disabled:cursor-not-allowed
                   w-full
                   py-3
                   text-white text-lg
@@ -198,7 +209,7 @@ export default function ContactSection() {
                   rounded-xl
                 "
               >
-                {t("form.submit")}
+                {sending ? t("form.sending") : t("form.submit")}
               </button>
             </form>
           </div>

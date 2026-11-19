@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { Link } from "@/i18n/routing";
+import { FaInstagram, FaLinkedinIn, FaFacebookF, FaGithub } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
@@ -68,7 +68,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#">{t("QuickLinks.Home")}</Link>
+              <Link href="/">{t("QuickLinks.Home")}</Link>
             </li>
             <li
               className="
@@ -76,7 +76,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#skills">{t("QuickLinks.Skills")}</Link>
+              <Link href="/#skills">{t("QuickLinks.Skills")}</Link>
             </li>
             <li
               className="
@@ -84,7 +84,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#projects">{t("QuickLinks.Projects")}</Link>
+              <Link href="/#projects">{t("QuickLinks.Projects")}</Link>
             </li>
             <li
               className="
@@ -92,7 +92,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="#services">{t("QuickLinks.Services")}</Link>
+              <Link href="/#services">{t("QuickLinks.Services")}</Link>
             </li>
           </ul>
         </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                 hover:text-green-400
               "
             >
-              <Link href="/">{t("Company.About")}</Link>
+              <Link href="/#about">{t("Company.About")}</Link>
             </li>
             <li
               className="
@@ -151,6 +151,21 @@ const Footer = () => {
             "
           >
             <a
+              href="https://github.com/Ashraf-Salah3"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub
+                className="
+                text-gray-400
+                cursor-pointer
+                hover:text-green-400
+              "
+              />
+            </a>
+            <a
+              aria-label="Instagram"
               href="https://www.instagram.com/ashraf_salah3?igsh=Y3hpeTF6bGo2anlx&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
@@ -164,6 +179,7 @@ const Footer = () => {
               />
             </a>
             <a
+              aria-label="LinkedIn"
               href="https://www.linkedin.com/in/ashraf-s-9b339a291?utm_source=share_via&utm_content=profile&utm_medium=member_iosc"
               target="_blank"
               rel="noopener noreferrer"
@@ -177,6 +193,7 @@ const Footer = () => {
               />
             </a>
             <a
+              aria-label="Facebook"
               href="https://www.facebook.com/share/1D4SND5X8g/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"

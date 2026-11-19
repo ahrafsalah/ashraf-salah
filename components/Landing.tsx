@@ -32,7 +32,7 @@ const Landing = () => {
         >
           <Image
             src="/images/image.png"
-            alt="Ashraf"
+            alt="Ashraf Salah"
             width={120}
             height={120}
             className="
@@ -43,7 +43,7 @@ const Landing = () => {
 
         <Image
           src="/images/arrow.png"
-          alt="arrow"
+          alt=""
           width={130}
           height={130}
           className="
@@ -150,6 +150,22 @@ const Landing = () => {
         >
           {t("developerDescription")}
         </p>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="rounded-[35px] border border-(--main-color) bg-(--color3) px-7 py-3 text-white transition hover:brightness-125"
+          >
+            {t("ctaProjects")}
+          </a>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-[35px] border border-zinc-600 px-7 py-3 text-white transition hover:border-(--main-color)"
+          >
+            {t("ctaResume")}
+          </a>
+        </div>
       </div>
     </div>
   );

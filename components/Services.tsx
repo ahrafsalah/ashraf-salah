@@ -31,7 +31,7 @@ const Services = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             whileHover={{ scale: 1.02 }}
-            className="box bg-black relative cursor-pointer rounded-lg overflow-hidden border border-zinc-800 flex flex-col h-full"
+            className="box bg-black relative rounded-lg overflow-hidden border border-zinc-800 flex flex-col h-full"
           >
             <Image
               src={service.image}

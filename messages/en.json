@@ -1,27 +1,53 @@
 {
-  "Services": {
-    "title": "Services"
-  },
-  "Projects": {
-    "title": "Projects"
+  "Meta": {
+    "title": "Ashraf Salah | Frontend Developer (React & Next.js)",
+    "description": "Portfolio of Ashraf Salah, a Frontend Developer from Egypt who builds fast, responsive web apps with React, Next.js, TypeScript and Tailwind CSS."
   },
   "Header": {
     "home": "Home",
+    "about": "About",
     "skills": "Skills",
     "services": "Services",
     "projects": "Projects",
     "contact": "Let's Talk",
-    "resume": "Resume"
+    "resume": "Resume",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "experience": "Experience",
+    "testimonials": "Testimonials",
+    "faq": "FAQ"
   },
   "Landing": {
     "greeting": "Hi, I'm Ashraf Salah",
-    "roleDesigner": "A designer who believes",
-    "quotePart1": "First impressions",
-    "quotePart2": "are made by",
-    "quotePart3": "the cover...",
-    "quoteReason": "Because if an interface doesn't win you over in the first second, what would make you stay?",
-    "developerTitle": "I'm a Frontend Developer",
-    "developerDescription": "I turn complex ideas into fast, beautiful, and effortless web experiences. My craft is React.js, Next.js, and Tailwind CSS, backed by clean, scalable code that's a joy to maintain and grow. I'm comfortable with APIs, state management (Redux / Context API), and backends like Firebase and Supabase. I'm always learning, always shipping, and always building products that deliver real value to real people."
+    "roleDesigner": "A Frontend Developer who believes",
+    "quotePart1": "Great products",
+    "quotePart2": "start with a",
+    "quotePart3": "great first impression.",
+    "quoteReason": "If an interface doesn't earn your attention in the first few seconds, nobody stays to discover what's behind it.",
+    "developerTitle": "Frontend Developer · React & Next.js",
+    "developerDescription": "I build fast, responsive, and easy-to-use web interfaces with React, Next.js, TypeScript, and Tailwind CSS. I write clean, maintainable code, work with REST APIs, manage state with Redux and Context API, and connect products to backends like Firebase and Supabase. My goal is to ship polished, high-performance work that is genuinely useful to the people who use it.",
+    "ctaProjects": "View my work",
+    "ctaResume": "Download resume"
+  },
+  "About": {
+    "title": "About Me",
+    "p1": "I'm a frontend developer based in Tanta, Egypt, with over a year of hands-on experience. I turn ideas and designs into fast, responsive web products using React, Next.js, and Tailwind CSS, with a strong focus on clean code and user experience.",
+    "p2": "My interest in cybersecurity, from CTF challenges to building a cybersecurity academy's website, shapes how I work: I think about how systems can fail and keep security in mind from the start.",
+    "p3": "I'm currently open to new opportunities and freelance projects, and I'd love to join a cross-functional team that believes inclusive design can make people's lives better.",
+    "facts": {
+      "location": {
+        "label": "Location",
+        "value": "Tanta, Egypt"
+      },
+      "focus": {
+        "label": "Focus",
+        "value": "React · Next.js · TypeScript"
+      },
+      "status": {
+        "label": "Status",
+        "value": "Open to new opportunities"
+      }
+    }
   },
   "Skills": {
     "title": "My Toolbox",
@@ -29,6 +55,40 @@
     "quotePart2": "cross-functional",
     "quotePart3": "team",
     "quotePart4": "that believes inclusive design can make people's lives better."
+  },
+  "Services": {
+    "title": "Services"
+  },
+  "Projects": {
+    "title": "Projects",
+    "live": "Live demo",
+    "code": "Source code"
+  },
+  "Process": {
+    "title": "How I Work",
+    "steps": {
+      "understand": {
+        "title": "Understand",
+        "desc": "I start with your goals, your audience, and the constraints, so we build the right thing before building it right."
+      },
+      "plan": {
+        "title": "Plan & Design",
+        "desc": "I define the structure, components, and responsive behavior before writing production code."
+      },
+      "build": {
+        "title": "Build",
+        "desc": "I write clean, typed, reusable code and share regular updates, so you always see progress."
+      },
+      "launch": {
+        "title": "Launch & Improve",
+        "desc": "I optimize performance and SEO, test across devices, and refine the result based on feedback."
+      }
+    }
+  },
+  "CTA": {
+    "title": "Have a project or an opportunity in mind?",
+    "description": "I'm open to frontend roles and freelance projects. Send me a message and I'll get back to you soon.",
+    "button": "Get in touch"
   },
   "Footer": {
     "QuickLinks": {
@@ -46,7 +106,7 @@
     },
     "FollowMe": {
       "title": "Let's Connect"
-    }, 
+    },
     "socialMedia": {
       "title": "Follow Me"
     }
@@ -55,16 +115,92 @@
     "title": "Let's Build Something Great",
     "description": "Have a project in mind or an opportunity to share? I'd love to hear about it. Reach out by email or send me a message using the form below, and I'll get back to you soon.",
     "form": {
-      "title":"Send Your Message",
+      "title": "Send Your Message",
       "name": "Your Name",
       "email": "Your Email",
       "message": "Tell me about your project",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "toast": {
+      "success": "Message sent successfully!",
+      "error": "Couldn't send your message. Please try again or email me directly."
     },
     "ContactInfo": {
-      "address": { "title": "Location", "value": "Tanta - Gharbia - Egypt" },
-      "phone": { "title": "Phone", "value": "01029805532" },
-      "email": { "title": "Email", "value": "a.salah3451@gmail.com" }
+      "address": {
+        "title": "Location",
+        "value": "Tanta - Gharbia - Egypt"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "01029805532"
+      },
+      "email": {
+        "title": "Email",
+        "value": "a.salah3451@gmail.com"
+      }
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "freelance": "Freelance",
+    "personal": "Personal project",
+    "viewLive": "View live site ↗",
+    "educationTitle": "Education",
+    "education": {
+      "degree": "Faculty of Information Technology and Computer Science",
+      "school": "Tanta University"
+    },
+    "languagesTitle": "Languages",
+    "languages": {
+      "ar": "Arabic: native",
+      "en": "English: good command, written and spoken"
+    }
+  },
+  "Stats": {
+    "label": "Highlights",
+    "years": "Years of experience",
+    "projects": "Projects built",
+    "live": "Live projects"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "badge": "Testimonials",
+    "headlineDark": "Kind words from",
+    "headlineMuted": "people I've worked with",
+    "cta": "Let's talk"
+  },
+  "Blog": {
+    "title": "Blog",
+    "readMore": "Read article ↗"
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "items": {
+      "tech": {
+        "q": "Which technologies do you work with?",
+        "a": "Mainly React.js and Next.js with TypeScript and Tailwind CSS, plus Redux and React Query for state and data, and Firebase on the backend side."
+      },
+      "figma": {
+        "q": "Can you turn a Figma or Adobe XD design into code?",
+        "a": "Yes. I convert Figma and Adobe XD designs into responsive web applications that match the original design."
+      },
+      "freelance": {
+        "q": "Do you take freelance projects?",
+        "a": "Yes. I've been working on freelance projects since 2024 and I'm open to new ones, as well as full-time frontend roles."
+      },
+      "time": {
+        "q": "How long does a project take?",
+        "a": "It depends on the scope and the number of pages and features. Once we talk through the requirements, I'll give you a realistic estimate before starting."
+      },
+      "admin": {
+        "q": "Can you build dashboards and connect to APIs?",
+        "a": "Yes. I've built admin panels for managing products, orders, and users, and a competition management dashboard, all connected to REST APIs."
+      },
+      "language": {
+        "q": "Which languages can we communicate in?",
+        "a": "Arabic (native) and English (good command, written and spoken)."
+      }
     }
   }
 }
