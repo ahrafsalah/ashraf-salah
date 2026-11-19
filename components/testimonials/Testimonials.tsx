@@ -76,6 +76,7 @@ export default function Testimonials() {
 
   return (
     <section className="container p-2 pt-10" id="testimonials">
+      <h2 className="main-heading">{t("title")}</h2>
       <div className="mx-auto mt-16 grid max-w-6xl items-center gap-10 md:grid-cols-[1fr_1.5fr] md:gap-14">
         {/* Intro */}
         <div className="text-start">
